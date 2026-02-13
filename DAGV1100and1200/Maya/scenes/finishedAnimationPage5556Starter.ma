@@ -1,6 +1,6 @@
 //Maya ASCII 2025ff03 scene
 //Name: finishedAnimationPage5556Starter.ma
-//Last modified: Mon, Jan 26, 2026 05:30:01 PM
+//Last modified: Mon, Jan 26, 2026 05:54:14 PM
 //Codeset: 1252
 requires maya "2025ff03";
 requires "stereoCamera" "10.0";
@@ -12,7 +12,7 @@ fileInfo "product" "Maya 2025";
 fileInfo "version" "2025";
 fileInfo "cutIdentifier" "202409190603-cbdc5a7e54";
 fileInfo "osv" "Windows 11 Enterprise v2009 (Build: 26200)";
-fileInfo "UUID" "DA81F86D-4627-B688-7B37-32934C2133FC";
+fileInfo "UUID" "F30CA323-42F7-E01B-26BF-2B9776B24F59";
 fileInfo "license" "education";
 createNode transform -s -n "persp";
 	rename -uid "1DFBA4A4-134A-59AA-2739-3C93ABFFD067";
@@ -91,20 +91,20 @@ createNode mesh -n "pSphereShape1" -p "pSphere1";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 createNode lightLinker -s -n "lightLinker1";
-	rename -uid "3FB9DEE8-4866-1B9C-1E19-D7878A1801F8";
+	rename -uid "91ABA4C7-477F-B53C-8BA8-4A8898196E99";
 	setAttr -s 2 ".lnk";
 	setAttr -s 2 ".slnk";
 createNode shapeEditorManager -n "shapeEditorManager";
-	rename -uid "D9AB58CD-4573-E73D-F868-2DBD1A078B10";
+	rename -uid "1A1F0458-429D-3FE6-9666-BE93D505E80A";
 createNode poseInterpolatorManager -n "poseInterpolatorManager";
-	rename -uid "D64C04CB-4195-AE55-59BD-8E9FE57155AC";
+	rename -uid "D5CCBAD9-473E-FF91-E180-EF95D76B80D1";
 createNode displayLayerManager -n "layerManager";
-	rename -uid "A510808C-4995-83BC-A1AA-9E95671D2CEE";
+	rename -uid "927B1871-4FB8-9A4B-0270-FAB14CF8F698";
 createNode displayLayer -n "defaultLayer";
 	rename -uid "138E985A-7348-29D9-3700-8797FCF8ABC7";
 	setAttr ".ufem" -type "stringArray" 0  ;
 createNode renderLayerManager -n "renderLayerManager";
-	rename -uid "227CB62D-4043-5CBF-5053-9E8F046E4715";
+	rename -uid "D2AF8996-4425-FF99-CC8E-F6928EA71DDD";
 createNode renderLayer -n "defaultRenderLayer";
 	rename -uid "29CEB1A3-0B4C-F279-EB3D-3F89FAD794C5";
 	setAttr ".g" yes;
@@ -192,8 +192,8 @@ createNode animCurveTL -n "pSphere1_translateX";
 	setAttr ".wgt" no;
 	setAttr -s 3 ".ktv[0:2]"  1 -5 13 5 25 -5;
 select -ne :time1;
-	setAttr ".o" 23;
-	setAttr ".unw" 23;
+	setAttr ".o" 1;
+	setAttr ".unw" 1;
 select -ne :hardwareRenderingGlobals;
 	setAttr ".otfna" -type "stringArray" 22 "NURBS Curves" "NURBS Surfaces" "Polygons" "Subdiv Surface" "Particles" "Particle Instance" "Fluids" "Strokes" "Image Planes" "UI" "Lights" "Cameras" "Locators" "Joints" "IK Handles" "Deformers" "Motion Trails" "Components" "Hair Systems" "Follicles" "Misc. UI" "Ornaments"  ;
 	setAttr ".otfva" -type "Int32Array" 22 0 1 1 1 1 1
